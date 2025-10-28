@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — Neural Labs</title>
+  <meta name="description" content="AI insights, tutorials, and industry news from Neural Labs." />
+  <meta name="theme-color" content="#0f172a" />
+  
+  <link rel="icon" type="image/svg+xml" href="neural_labs_logo.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <a href="index.html">
+          <img src="neural_labs_logo.svg" alt="Neural Labs" class="logo">
+        </a>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn" href="mailto:sales@neurallabs.us">Get Started</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page-header">
+        <h1>Blog</h1>
+        <p>Insights on AI, machine learning, and emerging technologies</p>
+      </div>
+
+      <!-- Blog Post 1 -->
+      <article class="content-section">
+        <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:16px">
+          <div>
+            <span style="display:inline-block; padding:4px 12px; background:rgba(124,58,237,0.1); color:var(--accent1); border-radius:20px; font-size:12px; font-weight:700">
+              TUTORIAL
+            </span>
+          </div>
+          <div style="color:var(--muted); font-size:14px">December 15, 2024</div>
+        </div>
+        
+        <h2 style="margin:0 0 12px 0">
+          <a href="#" style="color:inherit; text-decoration:none">Building Production-Ready RAG Systems: A Complete Guide</a>
+        </h2>
+        <p>Learn how to build Retrieval-Augmented Generation systems that scale. We cover embeddings, vector databases, and production best practices.</p>
+        
+        <div style="margin-top:16px">
+          <a href="#" style="color:var(--accent2); text-decoration:none; font-weight:600">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="content-section">
+        <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:16px">
+          <div>
+            <span style="display:inline-block; padding:4px 12px; background:rgba(6,182,212,0.1); color:var(--accent2); border-radius:20px; font-size:12px; font-weight:700">
+              INDUSTRY
+            </span>
+          </div>
+          <div style="color:var(--muted); font-size:14px">December 8, 2024</div>
+        </div>
+        
+        <h2 style="margin:0 0 12px 0">
+          <a href="#" style="color:inherit; text-decoration:none">The State of Enterprise AI in 2024</a>
+        </h2>
+        <p>Our analysis of AI adoption trends across Fortune 500 companies, including key challenges and success factors for enterprise implementation.</p>
+        
+        <div style="margin-top:16px">
+          <a href="#" style="color:var(--accent2); text-decoration:none; font-weight:600">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Blog Post 3 -->
+      <article class="content-section">
+        <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:16px">
+          <div>
+            <span style="display:inline-block; padding:4px 12px; background:rgba(124,58,237,0.1); color:var(--accent1); border-radius:20px; font-size:12px; font-weight:700">
+              TECHNICAL
+            </span>
+          </div>
+          <div style="color:var(--muted); font-size:14px">November 30, 2024</div>
+        </div>
+        
+        <h2 style="margin:0 0 12px 0">
+          <a href="#" style="color:inherit; text-decoration:none">Optimizing LLM Inference: From 2s to 200ms</a>
+        </h2>
+        <p>Practical techniques for reducing latency in large language model deployments, including batching, caching, and quantization strategies.</p>
+        
+        <div style="margin-top:16px">
+          <a href="#" style="color:var(--accent2); text-decoration:none; font-weight:600">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Blog Post 4 -->
+      <article class="content-section">
+        <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:16px">
+          <div>
+            <span style="display:inline-block; padding:4px 12px; background:rgba(6,182,212,0.1); color:var(--accent2); border-radius:20px; font-size:12px; font-weight:700">
+              CASE STUDY
+            </span>
+          </div>
+          <div style="color:var(--muted); font-size:14px">November 22, 2024</div>
+        </div>
+        
+        <h2 style="margin:0 0 12px 0">
+          <a href="#" style="color:inherit; text-decoration:none">How We Reduced AI Infrastructure Costs by 60%</a>
+        </h2>
+        <p>A detailed breakdown of our cost optimization journey for a client processing 10M+ AI requests daily, including specific tactics and results.</p>
+        
+        <div style="margin-top:16px">
+          <a href="#" style="color:var(--accent2); text-decoration:none; font-weight:600">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Newsletter CTA -->
+      <section class="content-section text-center" style="background:linear-gradient(135deg, rgba(124,58,237,0.08), rgba(6,182,212,0.04))">
+        <h2>Stay Updated</h2>
+        <p class="mb-2">Get the latest AI insights and tutorials delivered to your inbox.</p>
+        
+        <form style="max-width:500px; margin:0 auto; display:flex; gap:12px" action="https://formspree.io/f/YOUR_NEWSLETTER_FORM_ID" method="POST">
+          <input type="email" name="email" placeholder="your@email.com" required style="flex:1; background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:12px 16px; color:#e6eef8; font-family:var(--mono); font-size:14px">
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Neural Labs — <a href="mailto:sales@neurallabs.us">sales@neurallabs.us</a></p>
+      <p><a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="services.html">Services</a> · <a href="contact.html">Contact</a></p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
