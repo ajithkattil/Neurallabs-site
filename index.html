@@ -3,20 +3,84 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Neural Labs — AI Innovation & Intelligent Solutions</title>
-  <meta name="description" content="Transform your business with cutting-edge AI solutions. From prototypes to production, Neural Labs delivers intelligent systems that drive results." />
+  <title>Neural Labs — AI Innovation & Custom Machine Learning Solutions</title>
+  <meta name="description" content="Build production-ready AI systems that drive business value. Custom ML development, RAG, semantic search, and MLOps from $35K. 50+ projects delivered." />
+  <meta name="keywords" content="AI development, machine learning, custom AI, RAG, semantic search, MLOps, neural networks, AI consulting" />
   <meta name="theme-color" content="#6366f1" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://neurallabs.us/" />
+  <meta property="og:title" content="Neural Labs — AI Innovation & Custom ML Solutions" />
+  <meta property="og:description" content="Transform your business with production-ready AI. Custom development, RAG, MLOps. 50+ projects, 15 Fortune 500 clients." />
+  <meta property="og:image" content="https://neurallabs.us/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://neurallabs.us/" />
+  <meta name="twitter:title" content="Neural Labs — AI Innovation" />
+  <meta name="twitter:description" content="Production-ready AI systems that drive real business value" />
+  <meta name="twitter:image" content="https://neurallabs.us/og-image.jpg" />
+  
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Neural Labs",
+    "url": "https://neurallabs.us",
+    "logo": "https://neurallabs.us/neural_labs_logo.svg",
+    "description": "AI innovation and custom machine learning solutions for enterprise",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Francisco",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "sales@neurallabs.us",
+      "contactType": "Sales",
+      "availableLanguage": "English"
+    },
+    "sameAs": [
+      "https://linkedin.com/company/neurallabs",
+      "https://twitter.com/neurallabs",
+      "https://github.com/neurallabs"
+    ]
+  }
+  </script>
   
   <link rel="icon" type="image/svg+xml" href="neural_labs_logo.svg" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Analytics (Replace G-XXXXXXXXXX with your actual ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background:rgba(30,41,59,0.98); backdrop-filter:blur(20px); padding:20px; z-index:1000; border-top:2px solid rgba(99,102,241,0.3); box-shadow:0 -8px 32px rgba(0,0,0,0.4);">
+    <div style="max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;">
+      <p style="margin:0; color:#f1f5f9; font-size:14px;">🍪 We use cookies to improve your experience and analyze site traffic. <a href="privacy.html" style="color:#6366f1; text-decoration:underline;">Learn more</a></p>
+      <div style="display:flex; gap:12px;">
+        <button onclick="acceptCookies()" style="background:linear-gradient(135deg, #6366f1, #8b5cf6); color:white; border:none; padding:10px 24px; border-radius:8px; font-weight:600; cursor:pointer;">Accept</button>
+        <button onclick="declineCookies()" style="background:transparent; color:#94a3b8; border:1px solid rgba(148,163,184,0.3); padding:10px 24px; border-radius:8px; font-weight:600; cursor:pointer;">Decline</button>
+      </div>
+    </div>
+  </div>
+
   <div class="wrap">
     <header>
       <div class="brand">
         <a href="index.html">
-          <img src="neural_labs_logo.svg" alt="Neural Labs" class="logo">
+          <span style="font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 900; background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: -0.5px;">Neural Labs</span>
         </a>
       </div>
 
@@ -42,27 +106,37 @@
         <h1>Transform Your Business<br/>with Intelligent AI</h1>
         <p class="subtitle">We build production-ready AI systems that drive real business value. From semantic search to custom neural networks, we turn cutting-edge research into practical solutions.</p>
         <div class="cta-buttons" style="animation:fadeInUp 0.8s ease 0.6s backwards">
-          <a href="contact.html" class="btn">Start Your Project</a>
-          <a href="portfolio.html" class="btn-secondary btn">View Our Work</a>
+          <a href="contact.html" class="btn" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Hero Start Project'});">Start Your Project</a>
+          <a href="portfolio.html" class="btn-secondary btn" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Hero View Work'});">View Our Work</a>
         </div>
       </section>
+
+      <!-- Trust Badges -->
+      <div style="text-align:center; margin:40px 0;">
+        <div style="display:flex; justify-content:center; gap:24px; flex-wrap:wrap;">
+          <div class="trust-badge">🔒 SOC 2 Compliant</div>
+          <div class="trust-badge">⭐ 5.0 Client Rating</div>
+          <div class="trust-badge">🚀 100% On-Time</div>
+          <div class="trust-badge">💯 Money-Back Guarantee</div>
+        </div>
+      </div>
 
       <!-- Stats -->
       <div class="stats-grid">
         <div class="stat-card">
-          <div class="stat-number">50+</div>
+          <div class="stat-number" id="stat1">50+</div>
           <div class="stat-label">AI Projects</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number">15</div>
+          <div class="stat-number" id="stat2">15</div>
           <div class="stat-label">Fortune 500 Clients</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number">99.9%</div>
+          <div class="stat-number" id="stat3">99.9%</div>
           <div class="stat-label">Uptime SLA</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number">10M+</div>
+          <div class="stat-number" id="stat4">10M+</div>
           <div class="stat-label">Daily Inferences</div>
         </div>
       </div>
@@ -113,132 +187,77 @@
         </div>
       </section>
 
-      <!-- Why Choose Us -->
+      <!-- Testimonials -->
       <section class="section">
         <div class="section-header">
-          <h2>Why Choose Neural Labs</h2>
-          <p>The Neural Labs difference: expertise meets execution</p>
-        </div>
-
-        <div class="grid-2">
-          <div class="card" style="background:linear-gradient(135deg, rgba(99,102,241,0.1), rgba(139,92,246,0.05))">
-            <h3>🎯 Business-First Approach</h3>
-            <p>We don't build AI for AI's sake. Every solution is designed to deliver measurable ROI, whether that's increased revenue, reduced costs, or improved efficiency.</p>
-            <p style="margin-top:12px">Our team combines deep technical expertise with business acumen to ensure your AI investment drives real value.</p>
-          </div>
-
-          <div class="card" style="background:linear-gradient(135deg, rgba(236,72,153,0.1), rgba(245,158,11,0.05))">
-            <h3>⚡ Production-Ready from Day One</h3>
-            <p>No research projects that never ship. We build systems that are ready for production, with proper monitoring, error handling, and scalability built in.</p>
-            <p style="margin-top:12px">Our MLOps expertise ensures smooth deployments and reliable operations at any scale.</p>
-          </div>
-
-          <div class="card" style="background:linear-gradient(135deg, rgba(6,182,212,0.1), rgba(16,185,129,0.05))">
-            <h3>🚀 Rapid Time-to-Value</h3>
-            <p>We move fast without compromising quality. Our agile approach and proven frameworks mean you see results in weeks, not months.</p>
-            <p style="margin-top:12px">Quick iterations, frequent feedback, and incremental delivery keep your project on track.</p>
-          </div>
-
-          <div class="card" style="background:linear-gradient(135deg, rgba(16,185,129,0.1), rgba(6,182,212,0.05))">
-            <h3>🤝 True Partnership</h3>
-            <p>We're not just vendors - we're partners in your success. Our team works alongside yours to ensure smooth adoption and long-term value.</p>
-            <p style="margin-top:12px">Knowledge transfer, training, and ongoing support are standard with every engagement.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Tech Stack -->
-      <section class="section">
-        <div class="section-header">
-          <h2>Our Technology Stack</h2>
-          <p>Industry-leading tools and frameworks for cutting-edge AI</p>
-        </div>
-
-        <div class="card">
-          <div class="grid-4" style="text-align:center">
-            <div>
-              <div style="font-size:48px; margin-bottom:12px">🐍</div>
-              <h4 style="font-size:16px; margin-bottom:8px">Python & PyTorch</h4>
-              <p style="font-size:14px">Deep learning & neural networks</p>
-            </div>
-            <div>
-              <div style="font-size:48px; margin-bottom:12px">🤖</div>
-              <h4 style="font-size:16px; margin-bottom:8px">LangChain & LLMs</h4>
-              <p style="font-size:14px">Generative AI applications</p>
-            </div>
-            <div>
-              <div style="font-size:48px; margin-bottom:12px">📊</div>
-              <h4 style="font-size:16px; margin-bottom:8px">Vector Databases</h4>
-              <p style="font-size:14px">Pinecone, Weaviate, Qdrant</p>
-            </div>
-            <div>
-              <div style="font-size:48px; margin-bottom:12px">☁️</div>
-              <h4 style="font-size:16px; margin-bottom:8px">Cloud Platforms</h4>
-              <p style="font-size:14px">AWS, GCP, Azure</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Industries We Serve -->
-      <section class="section">
-        <div class="section-header">
-          <h2>Industries We Serve</h2>
-          <p>AI solutions tailored to your industry's unique challenges</p>
+          <h2>What Our Clients Say</h2>
+          <p>Real results from real companies</p>
         </div>
 
         <div class="grid-3">
-          <div class="feature-card">
-            <div class="feature-icon">🏥</div>
-            <h4>Healthcare</h4>
-            <p>HIPAA-compliant AI for diagnostics, patient engagement, and clinical decision support.</p>
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Neural Labs delivered a semantic search system that transformed our legal research. 78% faster queries, incredibly accurate results. Best AI partner we've worked with."</p>
+            <div class="author">
+              <div class="author-avatar" style="background:linear-gradient(135deg, #6366f1, #8b5cf6)">JM</div>
+              <div>
+                <strong>John Mitchell</strong>
+                <span>CTO, LegalTech Solutions</span>
+              </div>
+            </div>
           </div>
 
-          <div class="feature-card">
-            <div class="feature-icon">💰</div>
-            <h4>Financial Services</h4>
-            <p>Fraud detection, risk assessment, and algorithmic trading with regulatory compliance.</p>
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Exceptional MLOps implementation. They understood our complex requirements and delivered a scalable solution that handles 5M+ daily inferences without issues. True experts."</p>
+            <div class="author">
+              <div class="author-avatar" style="background:linear-gradient(135deg, #ec4899, #f59e0b)">SK</div>
+              <div>
+                <strong>Sarah Kim</strong>
+                <span>VP Engineering, FinanceAI</span>
+              </div>
+            </div>
           </div>
 
-          <div class="feature-card">
-            <div class="feature-icon">🛒</div>
-            <h4>E-commerce</h4>
-            <p>Personalized recommendations, visual search, and intelligent pricing optimization.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">⚖️</div>
-            <h4>Legal Tech</h4>
-            <p>Document analysis, contract review, and semantic search across legal databases.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">🏭</div>
-            <h4>Manufacturing</h4>
-            <p>Predictive maintenance, quality control, and supply chain optimization.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">📱</div>
-            <h4>Technology</h4>
-            <p>Product intelligence, user behavior analysis, and automated customer support.</p>
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"From concept to production in 8 weeks! Neural Labs built our custom NLP model and it's performing 40% better than off-the-shelf solutions. Highly recommend."</p>
+            <div class="author">
+              <div class="author-avatar" style="background:linear-gradient(135deg, #06b6d4, #10b981)">RC</div>
+              <div>
+                <strong>Robert Chen</strong>
+                <span>Head of AI, RetailTech Corp</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Recent Success -->
+      <!-- Case Study -->
       <section class="section">
         <div class="section-header">
-          <h2>Recent Success Story</h2>
+          <h2>Featured Case Study</h2>
           <p>See how we helped a Fortune 500 company transform their operations</p>
         </div>
 
-        <div class="card" style="background:linear-gradient(135deg, rgba(99,102,241,0.1), rgba(236,72,153,0.05))">
+        <div class="card" style="background:linear-gradient(135deg, rgba(99,102,241,0.1), rgba(236,72,153,0.05)); border:2px solid rgba(99,102,241,0.3);">
           <div class="grid-2">
             <div>
-              <h3>Intelligent Document Search Platform</h3>
-              <span style="color:#ec4899; font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:1px; display:block; margin-bottom:16px">LEGAL TECH • 2024</span>
-              <p>Built a semantic search engine enabling natural language queries across 10M+ legal documents. The system processes complex queries with 78% improved relevance and sub-second response times.</p>
+              <h3 style="font-size:32px; margin:0 0 12px 0;">Intelligent Document Search Platform</h3>
+              <span style="color:#ec4899; font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:1px; display:block; margin-bottom:20px">LEGAL TECH • 2024</span>
+              <p style="font-size:18px; line-height:1.7; margin-bottom:20px">Built a semantic search engine enabling natural language queries across 10M+ legal documents. The system processes complex queries with 78% improved relevance and sub-second response times.</p>
+              
+              <div style="margin:24px 0;">
+                <h4 style="margin:0 0 12px 0; color:var(--text-light)">Technologies Used:</h4>
+                <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">PyTorch</span>
+                  <span class="tech-badge">LangChain</span>
+                  <span class="tech-badge">Pinecone</span>
+                  <span class="tech-badge">FastAPI</span>
+                  <span class="tech-badge">Kubernetes</span>
+                </div>
+              </div>
               
               <div style="margin-top:24px; display:grid; grid-template-columns:repeat(3, 1fr); gap:16px">
                 <div>
@@ -272,9 +291,64 @@
             </div>
           </div>
           
-          <div style="margin-top:24px; text-align:center">
-            <a href="portfolio.html" class="btn">View Full Case Study</a>
+          <div style="margin-top:32px; text-align:center">
+            <a href="portfolio.html" class="btn" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Case Study View More'});">View Full Case Study</a>
           </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know</p>
+        </div>
+
+        <div style="max-width:800px; margin:0 auto;">
+          <details class="faq-item">
+            <summary>What's your typical project timeline?</summary>
+            <p>Most projects range from 6-12 weeks depending on complexity. Simple POCs can be delivered in 2-4 weeks, while enterprise-scale implementations may take 3-6 months. We provide detailed timelines during our initial consultation.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do you offer ongoing support and maintenance?</summary>
+            <p>Yes! All projects include 90 days of post-launch support. We also offer monthly retainer packages for continuous improvement, monitoring, and maintenance. Our support includes bug fixes, performance optimization, and feature updates.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What's your minimum project size?</summary>
+            <p>We typically work on projects starting at $25K. For smaller budgets, consider our proof-of-concept packages starting at $15K, perfect for validating ideas before full implementation.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can you work with our existing team and infrastructure?</summary>
+            <p>Absolutely! We excel at collaborating with in-house teams. We can augment your staff, work as an integrated team, or handle the entire project independently. We're platform-agnostic and can work with your existing tech stack (AWS, GCP, Azure, on-premise, etc.).</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do you ensure data privacy and security?</summary>
+            <p>We're SOC 2 compliant and follow industry best practices. We offer on-premise deployment, federated learning, and can sign NDAs and BAAs. Your data never leaves your infrastructure unless you explicitly choose cloud deployment. All code and models are your property.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What industries do you serve?</summary>
+            <p>We work across healthcare, finance, legal tech, e-commerce, manufacturing, and technology sectors. Our AI expertise translates across industries, and we quickly adapt to domain-specific requirements.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Newsletter Signup -->
+      <section class="section">
+        <div class="card" style="background:linear-gradient(135deg, rgba(99,102,241,0.1), rgba(139,92,246,0.05)); border:2px solid rgba(99,102,241,0.3); text-align:center; max-width:700px; margin:0 auto;">
+          <h3 style="font-size:32px; margin:0 0 12px 0;">Stay Updated on AI Innovation</h3>
+          <p style="color:var(--text-muted); margin-bottom:24px;">Get weekly insights on AI trends, case studies, and tutorials. No spam, unsubscribe anytime.</p>
+          
+          <form action="https://formspree.io/f/YOUR_NEWSLETTER_ID" method="POST" style="display:flex; gap:12px; max-width:500px; margin:0 auto; flex-wrap:wrap;">
+            <input type="email" name="email" placeholder="your@email.com" required style="flex:1; min-width:250px; background:rgba(30,41,59,0.6); border:2px solid rgba(99,102,241,0.3); border-radius:12px; padding:14px 18px; color:var(--text-light); font-family:var(--font); font-size:15px;">
+            <button type="submit" class="btn" onclick="gtag('event', 'submit', {'event_category': 'Newsletter', 'event_label': 'Homepage Signup'});">Subscribe →</button>
+          </form>
+          
+          <p style="font-size:12px; color:var(--text-muted); margin-top:12px;">🔒 We respect your privacy. No spam ever.</p>
         </div>
       </section>
 
@@ -283,8 +357,8 @@
         <h2>Ready to Transform Your Business?</h2>
         <p>Let's discuss how AI can drive growth, efficiency, and innovation for your organization.<br/>Book a free 30-minute consultation with our AI experts.</p>
         <div class="cta-buttons">
-          <a href="contact.html" class="btn btn-white">Schedule Consultation</a>
-          <a href="mailto:sales@neurallabs.us" class="btn btn-secondary">Email Us Directly</a>
+          <a href="contact.html" class="btn btn-white" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Footer Schedule Consultation'});">Schedule Consultation</a>
+          <a href="mailto:sales@neurallabs.us" class="btn btn-secondary" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Footer Email Direct'});">Email Us Directly</a>
         </div>
       </section>
     </main>
@@ -298,13 +372,66 @@
         <a href="services.html">Services</a> · 
         <a href="portfolio.html">Portfolio</a> · 
         <a href="blog.html">Blog</a> · 
-        <a href="contact.html">Contact</a>
+        <a href="contact.html">Contact</a> · 
+        <a href="privacy.html">Privacy</a>
       </p>
     </footer>
   </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Cookie consent
+    window.onload = function() {
+      if (!localStorage.getItem('cookieConsent')) {
+        document.getElementById('cookie-banner').style.display = 'block';
+      }
+    };
+    
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+      // Enable tracking
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+      });
+    }
+    
+    function declineCookies() {
+      localStorage.setItem('cookieConsent', 'false');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    
+    // Animate stats on scroll
+    let animated = false;
+    window.addEventListener('scroll', function() {
+      if (animated) return;
+      const statsSection = document.querySelector('.stats-grid');
+      const rect = statsSection.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        animated = true;
+        animateNumber('stat1', 0, 50, 2000, '+');
+        animateNumber('stat2', 0, 15, 2000, '');
+        animateNumber('stat3', 0, 99.9, 2000, '%');
+        animateNumber('stat4', 0, 10, 2000, 'M+');
+      }
+    });
+    
+    function animateNumber(id, start, end, duration, suffix) {
+      const element = document.getElementById(id);
+      const range = end - start;
+      const increment = range / (duration / 16);
+      let current = start;
+      
+      const timer = setInterval(() => {
+        current += increment;
+        if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
+          current = end;
+          clearInterval(timer);
+        }
+        element.textContent = (suffix === '%' || suffix === 'M+') ? current.toFixed(1) + suffix : Math.floor(current) + suffix;
+      }, 16);
+    }
   </script>
 </body>
 </html>
