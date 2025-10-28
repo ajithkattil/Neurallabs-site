@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Neural Network Icon -->
+  <g transform="translate(50, 80)">
+    <!-- Connections (lines between nodes) -->
+    <line x1="40" y1="30" x2="100" y2="70" stroke="url(#gradient2)" stroke-width="2" opacity="0.6"/>
+    <line x1="40" y1="30" x2="100" y2="20" stroke="url(#gradient2)" stroke-width="2" opacity="0.6"/>
+    <line x1="40" y1="110" x2="100" y2="70" stroke="url(#gradient2)" stroke-width="2" opacity="0.6"/>
+    <line x1="40" y1="110" x2="100" y2="120" stroke="url(#gradient2)" stroke-width="2" opacity="0.6"/>
+    
+    <line x1="100" y1="20" x2="160" y2="45" stroke="url(#gradient2)" stroke-width="2" opacity="0.6"/>
+    <line x1="100" y1="20" x2="160" y2="95" stroke="url(#gradient2)" stroke-width="2" opacity="0.4"/>
+    <line x1="100" y1="70" x2="160" y2="45" stroke="url(#gradient2)" stroke-width="2" opacity="0.6"/>
+    <line x1="100" y1="70" x2="160" y2="95" stroke="url(#gradient2)" stroke-width="2" opacity="0.6"/>
+    <line x1="100" y1="120" x2="160" y2="95" stroke="url(#gradient2)" stroke-width="2" opacity="0.6"/>
+    <line x1="100" y1="120" x2="160" y2="45" stroke="url(#gradient2)" stroke-width="2" opacity="0.4"/>
+    
+    <!-- Input Layer Nodes -->
+    <circle cx="40" cy="30" r="12" fill="url(#gradient1)" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="40" cy="110" r="12" fill="url(#gradient1)" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Hidden Layer Nodes -->
+    <circle cx="100" cy="20" r="12" fill="url(#gradient1)" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="100" cy="70" r="12" fill="url(#gradient1)" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="100" cy="120" r="12" fill="url(#gradient1)" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Output Layer Nodes -->
+    <circle cx="160" cy="45" r="12" fill="url(#gradient1)" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="160" cy="95" r="12" fill="url(#gradient1)" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Glow effect on center node -->
+    <circle cx="100" cy="70" r="18" fill="none" stroke="url(#gradient1)" stroke-width="1" opacity="0.3"/>
+  </g>
+  
+  <!-- Text: NEURAL LABS -->
+  <g transform="translate(280, 150)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#1F2937">
+      NEURAL
+    </text>
+    <text x="240" y="0" font-family="Arial, sans-serif" font-size="52" font-weight="300" fill="url(#gradient1)">
+      LABS
+    </text>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" letter-spacing="3">
+      AI PRODUCTS & SOLUTIONS
+    </text>
+  </g>
+</svg>
