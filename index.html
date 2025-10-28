@@ -1,17 +1,231 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neural Labs</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neural Labs — AI Innovation</title>
+  <meta name="description" content="Neural Labs — building intelligent systems with simplicity and innovation." />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Google Font (light) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f5f7fa; }
-    h1 { color: #222; }
-    p { color: #555; font-size: 1.2em; }
+    :root{
+      --bg:#0f172a; --card:#0b1220; --muted:#94a3b8; --accent1:#7c3aed; --accent2:#06b6d4;
+      --glass: rgba(255,255,255,0.03);
+      --radius:16px;
+      --maxw:1100px;
+      --mono: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--mono);
+      background:
+        radial-gradient(600px 400px at 10% 10%, rgba(124,58,237,0.12), transparent 6%),
+        radial-gradient(500px 300px at 90% 80%, rgba(6,182,212,0.06), transparent 10%),
+        linear-gradient(180deg, #071028 0%, #07111b 100%);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px 20px;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+    }
+
+    .wrap{max-width:var(--maxw); width:100%;}
+
+    header{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; margin-bottom:28px;
+    }
+    .brand{display:flex; align-items:center; gap:12px;}
+    .logo{
+      height:50px;
+      width:auto;
+      max-width:320px;
+      filter: brightness(1.1);
+    }
+    .brand h1{margin:0; font-size:18px; letter-spacing:0.2px}
+    nav{display:flex; gap:14px; align-items:center;}
+    nav a{color:var(--muted); text-decoration:none; font-weight:600; font-size:14px}
+    .btn{
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+      padding:10px 14px; border-radius:12px; color:white; text-decoration:none; font-weight:700;
+      box-shadow:0 8px 20px rgba(7,12,24,0.6); font-size:14px;
+    }
+
+    .hero{
+      display:grid; grid-template-columns: 1fr 420px; gap:28px; align-items:center;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      border-radius:var(--radius); padding:36px; box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      backdrop-filter: blur(6px);
+    }
+
+    .hero-left h2{margin:0 0 12px 0; font-size:32px; line-height:1.05}
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; background:var(--glass); color:var(--accent2); font-weight:700; font-size:13px; margin-bottom:14px}
+    .lead{color:var(--muted); margin-bottom:18px; font-size:15px}
+    .cta-row{display:flex; gap:12px; align-items:center; margin-top:8px}
+    .ghost{
+      border:1px solid rgba(255,255,255,0.06); padding:10px 14px; border-radius:12px; color:var(--muted);
+      background:transparent; font-weight:600; text-decoration:none; font-size:14px;
+    }
+    .metrics{display:flex; gap:18px; margin-top:22px;}
+    .metric{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding:10px 14px; border-radius:12px; min-width:96px; text-align:center}
+    .metric .num{font-weight:700; font-size:18px}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding:18px; border-radius:12px; box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    /* right panel */
+    .panel{
+      border-radius:12px; padding:18px; background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+    }
+    .illustration{display:flex; justify-content:center; align-items:center; padding:8px}
+    .illus-box{
+      width:100%; height:240px; border-radius:12px; background:linear-gradient(135deg, rgba(124,58,237,0.12), rgba(6,182,212,0.06));
+      display:grid; place-items:center; color:transparent;
+    }
+
+    /* features */
+    .features{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:22px}
+    .feature{padding:14px; border-radius:12px; background:var(--card); border:1px solid rgba(255,255,255,0.02)}
+    .feature h4{margin:0 0 8px 0}
+    .feature p{margin:0;color:var(--muted); font-size:14px}
+
+    footer{margin-top:20px; display:flex; justify-content:space-between; align-items:center; gap:12px; color:var(--muted); font-size:13px}
+    .small{color:var(--muted); font-size:13px}
+
+    /* responsive */
+    @media (max-width:920px){
+      .hero{grid-template-columns:1fr; padding:20px}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .logo{max-width:280px; height:auto;}
+    }
+    @media (max-width:560px){
+      header{flex-direction:column; align-items:flex-start; gap:12px}
+      nav{width:100%; justify-content:space-between}
+      .features{grid-template-columns:1fr}
+      .illus-box{height:180px}
+      .hero-left h2{font-size:24px}
+      .logo{max-width:240px; height:auto;}
+    }
+
+    /* small util */
+    code{background:rgba(255,255,255,0.02); padding:4px 8px; border-radius:6px; color:#cfe9ff}
+    a.u{color:inherit; text-decoration:none; border-bottom:1px dashed rgba(255,255,255,0.04)}
   </style>
 </head>
 <body>
-  <h1>Welcome to Neural Labs</h1>
-  <p>Building intelligent systems with simplicity and innovation.</p>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <!-- Neural Labs Logo -->
+        <img src="neural_labs_logo.svg" alt="Neural Labs - AI Products & Solutions" class="logo">
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="https://github.com/YOUR_GITHUB_USERNAME/neurallabs-site" target="_blank" rel="noopener">View on GitHub</a>
+      </nav>
+    </header>
+
+    <main class="hero card" role="main" aria-labelledby="hero-title">
+      <section class="hero-left">
+        <div class="tag">AI RESEARCH & PROD</div>
+        <h2 id="hero-title">Neural Labs — turning models into useful systems</h2>
+        <p class="lead">We design compact, reliable AI services and tools — from prototype models to production-ready pipelines. Fast experiments, reproducible results.</p>
+
+        <div class="cta-row">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="ghost" href="#features">See features</a>
+        </div>
+
+        <div class="metrics" aria-hidden="true">
+          <div class="metric">
+            <div class="num">3</div>
+            <div class="small">Open-source projects</div>
+          </div>
+          <div class="metric">
+            <div class="num">15k+</div>
+            <div class="small">Monthly experiments</div>
+          </div>
+          <div class="metric">
+            <div class="num">99.9%</div>
+            <div class="small">Service uptime</div>
+          </div>
+        </div>
+
+        <div id="features" class="features" style="margin-top:22px">
+          <div class="feature">
+            <h4>Model Ops</h4>
+            <p>Automated deployment, version control, and observability for models at scale.</p>
+          </div>
+          <div class="feature">
+            <h4>Embeddings & Search</h4>
+            <p>Fast semantic search pipelines using vector stores and lightweight indexing.</p>
+          </div>
+          <div class="feature">
+            <h4>Privacy-aware</h4>
+            <p>Data minimization, on-prem/edge options, and secure inference patterns.</p>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel" aria-label="visual">
+        <div class="illustration">
+          <div class="illus-box">
+            <!-- Simple SVG neural-ish icon -->
+            <svg width="180" height="120" viewBox="0 0 180 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1">
+                  <stop offset="0" stop-color="#7c3aed"/>
+                  <stop offset="1" stop-color="#06b6d4"/>
+                </linearGradient>
+              </defs>
+              <rect x="0" y="0" width="180" height="120" rx="12" fill="url(#g1)" opacity="0.08"/>
+              <g transform="translate(18,12)" stroke="url(#g1)" stroke-width="2" fill="none">
+                <circle cx="30" cy="28" r="8" opacity="0.95"/>
+                <circle cx="78" cy="24" r="8" opacity="0.95"/>
+                <circle cx="120" cy="36" r="8" opacity="0.95"/>
+                <circle cx="60" cy="72" r="8" opacity="0.95"/>
+                <path d="M38 30 L70 36" stroke-linecap="round"/>
+                <path d="M86 28 L108 36" stroke-linecap="round"/>
+                <path d="M50 34 L64 66" stroke-linecap="round"/>
+                <path d="M92 38 L74 66" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div style="margin-top:14px">
+          <div style="font-weight:700; margin-bottom:6px">Product Snapshot</div>
+          <div style="color:var(--muted); font-size:14px">Lightweight inference, integrated testing harness, and developer-friendly SDKs.</div>
+        </div>
+
+        <div style="margin-top:14px; display:flex; gap:10px;">
+          <a class="ghost" href="mailto:YOUR_EMAIL">Contact</a>
+          <a class="btn" href="#contact">Request Demo</a>
+        </div>
+      </aside>
+    </main>
+
+    <footer style="max-width:var(--maxw); margin-top:18px">
+      <div class="small">© <span id="year"></span> Neural Labs — Built with care · <a class="u" href="https://github.com/YOUR_GITHUB_USERNAME/neurallabs-site" target="_blank" rel="noopener">Source</a></div>
+      <div class="small" id="contact"><strong>Contact:</strong> <a class="u" href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // small runtime niceties
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
